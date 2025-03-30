@@ -1,4 +1,6 @@
 ## Linux configs
 
 ## Todo
-- [ ] VSCode config
+- [ ] VSCode config and keybinds
+- [ ] Git configs and aliases
+- [ ] Psql configs
