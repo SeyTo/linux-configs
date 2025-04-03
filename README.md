@@ -4,3 +4,4 @@
 - [ ] VSCode config and keybinds
 - [ ] Git configs and aliases
 - [ ] Psql configs
+- [ ] Touche configs
