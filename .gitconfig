@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[alias]
+	s = status
+	a = add
+	c = commit
+	p = push
+	co = checkout
+[pull]
+	rebase = true
