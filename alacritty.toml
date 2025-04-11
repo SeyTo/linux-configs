@@ -1,0 +1,127 @@
+general.import = [
+  "~/.config/alacritty/themes/papercolor_light.toml"
+  # "~/.config/alacritty/themes/ayu_dark.toml"
+]
+# "~/.config/alacritty/themes/themes/ayu_dark.toml"
+# "~/.config/alacritty/themes/themes/papercolor_light.toml"
+
+# [colors]
+
+# [colors.bright]
+# black = "#666666"
+# blue = "#74b8ef"
+# cyan = "#a3babf"
+# green = "#cfefb3"
+# magenta = "#b85e7b"
+# red = "#ef8171"
+# white = "#ffffff"
+# yellow = "#fff796"
+#
+# [colors.cursor]
+# cursor = "#ffffff"
+# text = "#000000"
+#
+# [colors.normal]
+# black = "#111111"
+# blue = "#5297cf"
+# cyan = "#5e7175"
+# green = "#aece91"
+# magenta = "#963c59"
+# red = "#d36265"
+# white = "#bebebe"
+# yellow = "#e7e18c"
+#
+# [colors.primary]
+# background = "#000000"
+# foreground = "#ffffff"
+
+[font]
+size = 10.5
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Source Code Pro"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+
+[font.offset]
+x = 0
+y = 1
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Alt"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Alt"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Hide"
+key = "H"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 5000
+
+[terminal.shell]
+program = "/bin/fish"
+
+[window]
+decorations = "none"
+blur=true
+
+[window.padding]
+x = 16
+y = 16
+
+# [[hints.enabled]]
+# hyperlinks=true
