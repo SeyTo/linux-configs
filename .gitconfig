@@ -6,5 +6,6 @@
 	c = commit
 	p = push
 	co = checkout
+	adog = git log --all --decorate --oneline --graph
 [pull]
 	rebase = true
