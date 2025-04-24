@@ -4,6 +4,7 @@
 	s = status
 	a = add
 	c = commit
+	pu = pull
 	p = push
 	co = checkout
 	adog = "log --all --decorate --oneline --graph"
