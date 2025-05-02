@@ -1,0 +1,49 @@
+{
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen3:latest"
+    },
+    "version": "2"
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "edit_predictions": {
+    "disabled_globs": [],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
+  "hide_mouse": "on_typing_and_movement",
+  "use_autoclose": true,
+  "indent_guides": {
+    "enabled": false
+  },
+  "vim_mode": true,
+  "buffer_font_family": "Monaspace Neon",
+  "buffer_font_weight": 500,
+  "ui_font_size": 14,
+  "ui_font_weight": 500,
+  "relative_line_numbers": true,
+  "buffer_font_size": 12,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Carbonfox"
+  },
+  "git": {
+    "git_gutter": null,
+    "gutter_debounce": null,
+    "inline_blame": {
+      "enabled": false
+    },
+    "hunk_style": null
+  }
+}

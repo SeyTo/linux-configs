@@ -1,0 +1,94 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl i": "pane::GoBack",
+      "ctrl n": "pane::GoForward",
+      "ctrl-l": null
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": [
+        "workspace::SendKeystrokes",
+        "escape"
+      ]
+    }
+  },
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen || vim_operator == none && !VimWaiting && vim_mode != insert",
+    "bindings": {
+      "space f b": "tab_switcher::Toggle",
+      "space f f": "file_finder::Toggle",
+      "space f p": "projects::OpenRecent",
+      "space r l": "task::Rerun",
+      "space r e": [
+        "task::Rerun",
+        {
+          "reevaluate_context": true
+        }
+      ],
+      "space q": "pane::CloseActiveItem",
+      "space c": "pane::CloseActiveItem",
+      "space o": "project_panel::ToggleFocus",
+      "space ; c": "assistant::InlineAssist",
+      "space ; f": "assistant::ToggleFocus",
+      "space g g": "git_panel::ToggleFocus",
+      "|": "pane::SplitRight",
+      "\\": "pane::SplitDown",
+      "space l a": "editor::ToggleCodeActions",
+      "space /": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ],
+      "space b c": "workspace::CloseInactiveTabsAndPanes"
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "g r": "editor::FindAllReferences",
+      "g a": "editor::ToggleCodeActions",
+      "space l r": "editor::Rename",
+      "space w": "workspace::Save",
+      "space g b": "git::Blame",
+      "space g g": "git_panel::FocusEditor",
+      "space f w": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {}
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a a": "project_panel::NewFile",
+      "a /": "project_panel::NewDirectory"
+    }
+  }
+]
