@@ -1,7 +1,8 @@
 ## Linux configs
 
 ## Todo
+
 - [ ] VSCode config and keybinds
-- [ ] Git configs and aliases
-- [ ] Psql configs
-- [ ] Touche configs
+- [x] Git configs and aliases
+- [x] Psql configs
+- [x] Touche configs
