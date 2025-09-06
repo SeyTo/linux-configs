@@ -1,0 +1,23 @@
+{
+  "selectedAuthType": "oauth-personal",
+  "contextFileName": "AGENTS.md",
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "shadcn-ui": {
+      "command": "npx",
+      "args": [
+        "@jpisnice/shadcn-ui-mcp-server",
+        "-f",
+        "react"
+      ]
+    }
+  },
+  "vimMode": true,
+  "preferredEditor": "neovim"
+}
