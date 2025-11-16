@@ -1,15 +1,28 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
-  "assistant": {
-    "default_model": {
+  "agent": {
+    "inline_assistant_model": {
       "provider": "ollama",
-      "model": "qwen3:latest"
+      "model": "hf.co/unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF:Q4_K_XL"
+    },
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o"
     },
     "version": "2"
   },
   "telemetry": {
+    "diagnostics": false,
     "metrics": false
   },
   "edit_predictions": {
@@ -19,15 +32,14 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
-  "hide_mouse": "on_typing_and_movement",
   "use_autoclose": true,
   "indent_guides": {
     "enabled": false
   },
   "vim_mode": true,
-  "buffer_font_family": "Monaspace Neon",
+  "buffer_font_family": "Hack",
   "buffer_font_weight": 500,
   "ui_font_size": 14,
   "ui_font_weight": 500,
@@ -38,6 +50,7 @@
     "light": "One Light",
     "dark": "Carbonfox"
   },
+  "hide_mouse": "never",
   "git": {
     "git_gutter": null,
     "gutter_debounce": null,

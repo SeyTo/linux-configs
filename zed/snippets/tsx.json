@@ -1,0 +1,22 @@
+{
+  "todo": {
+    "prefix": ["todo"],
+    "body": ["// TODO: $1"],
+    "description": "Todo comment"
+  },
+  "fixme": {
+    "prefix": ["fixme"],
+    "body": ["// FIXME: $1"],
+    "description": "Fixme comment"
+  },
+  "import": {
+    "prefix": ["impo"],
+    "body": ["import $2 from '$1';"],
+    "description": "Import statement"
+  },
+  "Console log": {
+    "prefix": ["clog"],
+    "body": ["console.log($1);"],
+    "description": "Console log"
+  }
+}
