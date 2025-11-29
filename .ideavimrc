@@ -1,0 +1,71 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+set clipboard+=unnamed
+set clipboard+=ideaput
+set surround
+let mapleader=" "
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+imap jk <ESC>
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+set ideajoin
+
+nnoremap <leader>R :action IdeaVim.ReloadVimRc.reload<CR>
+nmap <Leader>lr <Action>(RenameElement)
+nmap <Leader>gr <Action>(GotoDeclaration)
+nmap <Leader>c <Action>(CloseContent)
+nmap <Leader>| <Action>(SplitVertically)
+nmap <Leader>] :action GotoNextError<CR>
+nmap <Leader>[ :action GotoPreviousError<CR>
+nmap <Leader>/ <Action>(CommentByLineComment)
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+
+nnoremap <c-\> :action SplitVertically<CR>
+nnoremap <c-|> :action SplitHorizontally<CR>
+
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+
+nnoremap <c-i> :action PreviousTab<CR>
+nnoremap <c-o> :action NextTab<CR>
+
+nnoremap <Leader>en :action EditSourceInNewWindow<CR>
+nnoremap <Leader>n :action NextWindow<CR>
+
+nnoremap <Leader>q :action CloseContent<CR>
+nnoremap <Leader>qa :action CloseAllEditors<CR>
