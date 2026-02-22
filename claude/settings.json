@@ -1,0 +1,28 @@
+{
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/rj/.config/claude-notify/hooks/notify.sh --type input"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/rj/.config/claude-notify/hooks/notify.sh --type complete"
+          }
+        ]
+      }
+    ]
+  },
+  "effortLevel": "high"
+}

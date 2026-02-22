@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "plugins": {
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/rj/_proj/esmp/webapp",
+        "installPath": "/home/rj/.claude/plugins/cache/claude-plugins-official/frontend-design/2cd88e7947b7",
+        "version": "2cd88e7947b7",
+        "installedAt": "2026-01-30T12:40:51.947Z",
+        "lastUpdated": "2026-02-08T07:33:57.216Z",
+        "gitCommitSha": "27d2b86d72da27c64585150857cee8472ad47abb"
+      }
+    ]
+  }
+}
