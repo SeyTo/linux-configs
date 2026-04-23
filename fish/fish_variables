@@ -4,10 +4,12 @@ SETUVAR --export ANDROID_HOME:/home/rj/android\x2dsdk/
 SETUVAR --export ANDROID_SDK:/home/rj/android\x2dsdk/
 SETUVAR --export AVANTE_ANTHROPIC_API_KEY:TmzzvWZwPvKGWJaBuvSveeqKD9nJanMPgdqGDeTWjfMoeqcf\x23CEDElrW9fD\x2drz0bBPi8wuoBaOqkMjcLJPlfuIv_BBr0
 SETUVAR --export --path BACKUP_PATH:/a/_backups/
+SETUVAR --export CLAUDE_CONFIG_DIR:/home/rj/\x2eclaude
 SETUVAR --export EDITOR:nvim\x20\x2du\x20/home/rj/\x2econfig/nvim/init\x2elua
 SETUVAR --export --path GOPATH:/home/rj/go
-SETUVAR LAST_WORKING_DIR:/home/rj/_proj/linux\x2dconfigs
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d17\x2dopenjdk
+SETUVAR LAST_WORKING_DIR:/home/rj/_proj/linux\x2dconfigs/fish
 SETUVAR __done_min_cmd_duration:5000
 SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:
-SETUVAR fish_user_paths:/home/rj/go/bin\x1e/home/rj/\x2escripts
+SETUVAR fish_user_paths:/usr/lib/jvm/java\x2d17\x2dopenjdk/bin\x1e/home/rj/android\x2dsdk/platform\x2dtools\x1e/home/rj/android\x2dsdk/emulator\x1e/home/rj/go/bin\x1e/home/rj/\x2escripts
