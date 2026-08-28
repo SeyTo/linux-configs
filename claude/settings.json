@@ -1,4 +1,9 @@
 {
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
   "permissions": {
     "allow": [
       "Bash(* --version)",
@@ -48,12 +53,22 @@
       }
     ]
   },
+  "workflowKeywordTriggerEnabled": false,
   "statusLine": {
     "type": "command",
-    "command": "jq -r '\"[\\(.model.display_name)] \\(.context_window.used_percentage // 0)% context\"'"
+    "command": "/home/rj/.claude-kush/statusline.sh"
   },
   "enabledPlugins": {
-    "caveman@caveman": true
+    "gopls-lsp@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -61,7 +76,65 @@
         "source": "github",
         "repo": "JuliusBrussee/caveman"
       }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
     }
   },
-  "effortLevel": "medium"
+  "effortLevel": "high",
+  "advisorModel": "opus",
+  "promptSuggestionEnabled": false,
+  "awaySummaryEnabled": false,
+  "tui": "fullscreen",
+  "theme": "auto",
+  "editorMode": "vim",
+  "preferredNotifChannel": "auto",
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Bash(pnpm db:restore:*)",
+      "Bash(pnpm db:push:*)",
+      "Bash(pg_restore:*)"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: Private — lettcuecode/DentCool (confirmed via gh)",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured — repo uses .env files (gitignored; .env.example is the committed template, no secrets)",
+      "**Default / protected branches**: Default branch main; no classic protected branches listed (rulesets not queryable here — treat main as protected-by-convention and avoid force-pushes/history rewrites)",
+      "**CI/CD deploy targets**: Coolify (COOLIFY_URL / COOLIFY_APP_UUID, triggered via `make coolify-deploy` / `release`), and a container registry referenced as ODENT_IMAGE_REGISTRY (e.g. ghcr.io/yourorg/odent placeholder) — both unset in .env.example, not confirmed live targets",
+      "**Network posture**: None configured",
+      "**Source control**: The trusted repo (lettcuecode/DentCool on github.com) and its origin remote only",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: Local Postgres (DATABASE_URL/APP_DATABASE_URL, dev default localhost:5432/odent), local Python copilot service (COPILOT_URL, default localhost:8000), local Mailpit (dev SMTP)",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: Patient/clinical/billing data in the Postgres DB (tenant-scoped via RLS, `withTenant`); `.env`, `.env.local`, `.env.production.local`, `apps/mobile/.env`, `services/copilot/.env.example`-derived local env files hold credentials — share only with audiences cleared at the [named+specifics] bar",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment; also treat the Coolify deploy target and image registry/tag as sensitive once configured",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development (clinic-management monorepo: Next.js web, Expo mobile, FastAPI copilot, tRPC/Drizzle/Postgres)",
+      "**Trusted repo**: lettcuecode/DentCool (github.com:lettcuecode/DentCool.git), private — confidential material (e.g. patient/billing data, secrets) is fine to keep in this repo's own work, but secrets and sensitive personal/entrusted data are never cleared for commit by visibility alone",
+      "**Org-specific CLIs**: None configured — project tooling is pnpm/Turborepo, Drizzle Kit, uv (copilot), docker compose, gh",
+      "routine under this repo's working tree (pnpm/turbo/db:*/copilot:* scripts, docker compose for local Postgres) is expected day-to-day activity"
+    ]
+  },
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    }
+  }
 }
