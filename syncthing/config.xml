@@ -1,6 +1,12 @@
-<configuration version="51">
+<configuration version="52">
     <folder id="5xtk7-c2kfz" label="Current reading" path="/a/_current_reading" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="ACU6QDJ-CH4KJ2S-52WEM7Q-BAFEVHT-RG7PFLF-5DMW2XO-BP4YXCY-HYC3SAX" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="L22MIQ3-5PJ5SYU-7EXQ3LQ-3TYWYD3-OFZL2GD-CM2MRA4-GEIEQAX-HJZ5BQC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="MVJKUXP-2ROYOZL-B45LQKW-3TJGYQW-2GAQLCG-YCB4IBC-ZZYA752-C5HUCAB" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -37,6 +43,7 @@
         <sendOwnership>false</sendOwnership>
         <syncXattrs>false</syncXattrs>
         <sendXattrs>false</sendXattrs>
+        <blockIndexing>true</blockIndexing>
         <xattrFilter>
             <maxSingleEntrySize>1024</maxSingleEntrySize>
             <maxTotalSize>4096</maxTotalSize>
@@ -77,6 +84,7 @@
         <sendOwnership>false</sendOwnership>
         <syncXattrs>false</syncXattrs>
         <sendXattrs>false</sendXattrs>
+        <blockIndexing>true</blockIndexing>
         <xattrFilter>
             <maxSingleEntrySize>1024</maxSingleEntrySize>
             <maxTotalSize>4096</maxTotalSize>
@@ -84,6 +92,12 @@
     </folder>
     <folder id="f2vk1-fmbq5" label="Obs" path="/a/_obs" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="ACU6QDJ-CH4KJ2S-52WEM7Q-BAFEVHT-RG7PFLF-5DMW2XO-BP4YXCY-HYC3SAX" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="L22MIQ3-5PJ5SYU-7EXQ3LQ-3TYWYD3-OFZL2GD-CM2MRA4-GEIEQAX-HJZ5BQC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="MVJKUXP-2ROYOZL-B45LQKW-3TJGYQW-2GAQLCG-YCB4IBC-ZZYA752-C5HUCAB" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -120,6 +134,7 @@
         <sendOwnership>false</sendOwnership>
         <syncXattrs>false</syncXattrs>
         <sendXattrs>false</sendXattrs>
+        <blockIndexing>true</blockIndexing>
         <xattrFilter>
             <maxSingleEntrySize>1024</maxSingleEntrySize>
             <maxTotalSize>4096</maxTotalSize>
@@ -127,6 +142,12 @@
     </folder>
     <folder id="rhgpu-fsbld" label="Sync All" path="/a/_sync_all" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="ACU6QDJ-CH4KJ2S-52WEM7Q-BAFEVHT-RG7PFLF-5DMW2XO-BP4YXCY-HYC3SAX" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="L22MIQ3-5PJ5SYU-7EXQ3LQ-3TYWYD3-OFZL2GD-CM2MRA4-GEIEQAX-HJZ5BQC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="MVJKUXP-2ROYOZL-B45LQKW-3TJGYQW-2GAQLCG-YCB4IBC-ZZYA752-C5HUCAB" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -163,12 +184,13 @@
         <sendOwnership>false</sendOwnership>
         <syncXattrs>false</syncXattrs>
         <sendXattrs>false</sendXattrs>
+        <blockIndexing>true</blockIndexing>
         <xattrFilter>
             <maxSingleEntrySize>1024</maxSingleEntrySize>
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <device id="MVJKUXP-2ROYOZL-B45LQKW-3TJGYQW-2GAQLCG-YCB4IBC-ZZYA752-C5HUCAB" name="Mi" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="ACU6QDJ-CH4KJ2S-52WEM7Q-BAFEVHT-RG7PFLF-5DMW2XO-BP4YXCY-HYC3SAX" name="Sonic" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>
@@ -179,7 +201,18 @@
         <remoteGUIPort>0</remoteGUIPort>
         <numConnections>0</numConnections>
     </device>
-    <device id="QHPN5EN-3XPZQJY-3TE46UC-5TTCBXI-UUXGXLI-7RTEKWG-THFQK62-EFP7HAA" name="ONEPLUS A3003" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="L22MIQ3-5PJ5SYU-7EXQ3LQ-3TYWYD3-OFZL2GD-CM2MRA4-GEIEQAX-HJZ5BQC" name="ONEPLUS A3003" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
+    <device id="MVJKUXP-2ROYOZL-B45LQKW-3TJGYQW-2GAQLCG-YCB4IBC-ZZYA752-C5HUCAB" name="Mi" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>
@@ -223,6 +256,8 @@
         <metricsWithoutAuth>false</metricsWithoutAuth>
         <apikey>bLJxgJPMUi27vkKEguLLS9T5uxN2pLzX</apikey>
         <theme>default</theme>
+        <sessionCookieDurationS>604800</sessionCookieDurationS>
+        <sessionCookiePath>/</sessionCookiePath>
     </gui>
     <ldap></ldap>
     <options>
@@ -234,7 +269,7 @@
         <localAnnounceMCAddr>[ff12::8384]:21027</localAnnounceMCAddr>
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
-        <reconnectionIntervalS>60</reconnectionIntervalS>
+        <reconnectionIntervalS>20</reconnectionIntervalS>
         <relaysEnabled>true</relaysEnabled>
         <relayReconnectIntervalM>10</relayReconnectIntervalM>
         <startBrowser>true</startBrowser>
@@ -248,7 +283,7 @@
         <urURL>https://data.syncthing.net/newdata</urURL>
         <urPostInsecurely>false</urPostInsecurely>
         <urInitialDelayS>1800</urInitialDelayS>
-        <autoUpgradeIntervalH>12</autoUpgradeIntervalH>
+        <autoUpgradeIntervalH>24</autoUpgradeIntervalH>
         <upgradeToPreReleases>false</upgradeToPreReleases>
         <keepTemporariesH>24</keepTemporariesH>
         <cacheIgnoredFiles>false</cacheIgnoredFiles>
@@ -316,6 +351,7 @@
             <sendOwnership>false</sendOwnership>
             <syncXattrs>false</syncXattrs>
             <sendXattrs>false</sendXattrs>
+            <blockIndexing>true</blockIndexing>
             <xattrFilter>
                 <maxSingleEntrySize>1024</maxSingleEntrySize>
                 <maxTotalSize>4096</maxTotalSize>
