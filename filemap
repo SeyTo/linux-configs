@@ -14,3 +14,5 @@
 /home/rj/.zed/keymaps.json|/home/rj/_proj/linux-configs/zed/keymaps.json
 /home/rj/.zed/tasks.json|/home/rj/_proj/linux-configs/zed/tasks.json
 /home/rj/.local/state/syncthing/config.xml|/home/rj/_proj/linux-configs/syncthing/config.xml
+/home/rj/.claude/hooks/session-color.sh
+/home/rj/.claude/hooks/session-title.sh
