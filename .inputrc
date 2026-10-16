@@ -1,0 +1,13 @@
+# keep system defaults (creating ~/.inputrc stops /etc/inputrc from loading otherwise)
+$include /etc/inputrc
+
+set editing-mode vi
+set keyseq-timeout 100          # ms to wait after 'j' for a 'k'
+
+# show the current mode in the prompt, and change the cursor shape
+set show-mode-in-prompt on
+set vi-ins-mode-string "\1\e[6 q\2"   # insert mode: bar cursor
+set vi-cmd-mode-string "\1\e[2 q\2"   # normal mode: block cursor
+
+set keymap vi-insert
+"jk": vi-movement-mode
