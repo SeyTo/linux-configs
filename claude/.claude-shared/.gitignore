@@ -1,0 +1,3 @@
+# Runtime state Claude Code writes; per-machine, not config.
+plugins/
+skills/synced/
