@@ -1,0 +1,18 @@
+#!/bin/bash
+# claui - Claude Code on the ~/.claude-kush config, with the Chrome integration on.
+#
+# Also the herdr-board "claui" harness (see ~/.config/herdr-board/config.toml).
+# A board run arrives as environment, not arguments:
+#   $BOARD_SYSTEM_PROMPT  the column's stage contract  -> --append-system-prompt
+#   $BOARD_PROMPT         the card's task              -> the positional prompt
+# Both are unset in a normal shell, so plain `claui` is just an interactive session.
+export CLAUDE_CONFIG_DIR="$HOME/.claude-kush"
+
+set -- --chrome "$@"
+[ -n "$BOARD_SYSTEM_PROMPT" ] && set -- "$@" --append-system-prompt "$BOARD_SYSTEM_PROMPT"
+[ -n "$BOARD_PROMPT" ] && set -- "$@" "$BOARD_PROMPT"
+
+# The mise shim, not ~/.local/bin/claude: that wrapper runs `mise use -g` on every
+# launch, and six concurrent board dispatches would race each other rewriting the
+# global mise config. A nonzero exit there reads as a pane exit and fails the run.
+exec "$HOME/.local/share/mise/shims/claude" "$@"

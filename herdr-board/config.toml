@@ -1,0 +1,29 @@
+# herdr-board daemon configuration.
+# Read once at daemon startup: `board daemon stop` then any `board` command to reload.
+
+# Global cap on concurrent runs. There is no per-harness cap in herdr-board, so this
+# is 2 agents x 3 runs rather than "3 each" - either agent can use all 6 slots.
+# Real parallelism also needs cards in *different* spaces: cards that share a
+# (session, space_kind, space_ref) run strictly one at a time (per-space FIFO).
+max_concurrent = 6
+
+# How long a run may sit idle without calling `board done` before the card parks as
+# `awaiting` and notifies. Parking never fails a card and pauses the column timeout,
+# so this is the "agent asked me a question" signal for the Plan stage.
+idle_grace_seconds = 120
+
+# Two Claude Code identities, one per CLAUDE_CONFIG_DIR. The built-in `claude`
+# harness cannot do this - it has no env channel and there is only one of it - so
+# these are config-defined harnesses wrapping the launcher scripts, which read the
+# task from $BOARD_PROMPT and the stage contract from $BOARD_SYSTEM_PROMPT.
+#
+# Status tracking still works: both config dirs have herdr's claude integration
+# hook installed (`herdr integration status`), the launchers `exec` the real
+# claude binary, and boardd's supervisor reads pane-level agent status without
+# caring which harness started it.
+
+[harness.claui]
+argv = ["/home/rj/.local/bin/claui"]
+
+[harness.clauk]
+argv = ["/home/rj/.local/bin/clauk"]
